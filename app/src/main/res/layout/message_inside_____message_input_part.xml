@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0e2e8">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/describe_park"
+        android:layout_gravity="center_horizontal"
+
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/parkname_here"
+        android:textColor="#000000"
+        android:text="Detailed" />
+
+
+    <!--<ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/comment_image_send"
+        />-->
+
+
+
+
+
+
+
+
+   <!-- <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/what?"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/abc_ic_clear_search_api_holo_light"
+        android:background="#ffffff"
+        android:visibility="gone"/>-->
+
+
+
+    <TextView
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Park Name"
+        android:id="@+id/parkname_here"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
+
+    <!--/**
+* Created by Albert AN on 8/25/14.
+* All Rights Reserved
+*
+*  If you are not the intended recipient, any disclosure, copying, distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful.
+*  If you have received this by mistake, please e-mail the sender by replying to this message, and deleting the original and any printout thereof.
+
+이 코드의 정보는 대외비이며, 법적으로 보호될 수 있습니다.
+코드는 오직 받는 사람만을 위한 것이고,
+다른 사람의 접근은 허가되지 않습니다.
+의도된 수신자가 아니라면, 발표, 복사,
+배포 등의 행위는 금지되어 있으며, 불법입니다.
+이 코드를 실수로 받은 것이라면, 송신자에게 반송해고, 원본/ 출력물을 삭제해 주십시오.​
+*/-->
