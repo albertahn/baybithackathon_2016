@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#e0e2e8">
 
-    <TextView
+    <!-- <TextView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/describe_park"
@@ -15,12 +15,12 @@
         android:dividerHeight="0dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/parkname_here"
         android:textColor="#000000"
-        android:text="Detailed" />
+        android:text="Detailed"
+        android:layout_below="@+id/parkname_here" />
 
 
-    <!--<ImageView
+   <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/comment_image_send"
@@ -32,15 +32,14 @@
 
 
 
-
-   <!-- <ImageButton
+    <!--<ImageButton
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:id="@+id/what?"
+        android:id="@+id/whater"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:src="@drawable/abc_ic_clear_search_api_holo_light"
+        android:src="@drawable/abes"
         android:background="#ffffff"
         android:visibility="gone"/>-->
 
@@ -50,13 +49,53 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Park Name"
+        android:text="Abe&apos;s Cafe"
         android:id="@+id/parkname_here"
         android:layout_alignParentTop="true"
 
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Rewards!"
+        android:id="@+id/reward_button"
+        android:layout_alignBottom="@+id/fiftyfuller"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="58dp"
+        android:layout_alignTop="@+id/fiftyfuller"
+        android:layout_toEndOf="@+id/fiftyfuller" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/fiftyfuller"
+        android:src="@drawable/fif"
+        android:layout_below="@+id/parkname_here"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="5 More Coffees for a free cup!"
+        android:id="@+id/big_text"
+        android:layout_below="@+id/reward_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        android:textColor="#020202" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="recieved 100 Satoshi&apos;s from Abe&apos;s Cafe"
+        android:id="@+id/little_text"
+        android:layout_below="@+id/big_text"
+        android:layout_centerHorizontal="true"
+        android:textColor="#020202" />
 
 
 </RelativeLayout>

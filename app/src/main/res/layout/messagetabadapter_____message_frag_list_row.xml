@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="park_manager"
+        android:text=""
         android:id="@+id/park_manager"
         android:layout_gravity="center_horizontal"
         android:layout_alignBottom="@+id/product_picture"
@@ -22,7 +22,7 @@
         android:layout_below="@+id/parkname" />
 
 
-    <TextView
+    <ImageView
         android:layout_width="100dp"
         android:layout_height="70dp"
         android:id="@+id/product_picture"
@@ -31,13 +31,14 @@
         android:layout_alignParentStart="false"
         android:layout_alignParentTop="false"
         android:text="Distance"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:src="@drawable/ic_launcher"/>
 
     <ImageView
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:id="@+id/comment_button"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentTop ="true"
         android:layout_alignBottom="@+id/park_manager"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -52,7 +53,7 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/product_picture"
         android:layout_toEndOf="@+id/product_picture"
-        android:textSize="11dp"
+        android:textSize="21dp"
         android:textColor="#f2f6ff" />
 
     <TextView

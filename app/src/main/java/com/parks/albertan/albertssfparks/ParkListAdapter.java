@@ -16,18 +16,18 @@ import java.util.ArrayList;
 /**
  * Created by albertan on 3/24/16.
  */
-public class ParkListAdapter extends ArrayAdapter<Parks_model> {
+public class ParkListAdapter extends ArrayAdapter<MerchantNamesList> {
 
 
     static int rowList = R.layout.messagetabadapter_____message_frag_list_row;
 
     private final Context context;
 
-    private final ArrayList<Parks_model> itemsArrayList;
+    private final ArrayList<MerchantNamesList> itemsArrayList;
 
     private String parkname,zipcode,human_address,psamanager, email, number;
 
-    public ParkListAdapter(Context context, ArrayList<Parks_model> itemsArrayList) {
+    public ParkListAdapter(Context context, ArrayList<MerchantNamesList> itemsArrayList) {
 
 
 //ArrayList<HomeItem> itemsArrayList
@@ -53,58 +53,53 @@ public class ParkListAdapter extends ArrayAdapter<Parks_model> {
         // 3. Get the two text view from the rowView
         TextView parkname_view = (TextView) rowView.findViewById(R.id.parkname);
         TextView description_view = (TextView) rowView.findViewById(R.id.park_manager);
-        TextView product_picture = (TextView) rowView.findViewById(R.id.product_picture);
-
-        product_picture.setText(""+ itemsArrayList.get(position).getdistance()+ " km");
-
+        ImageView product_picture = (ImageView) rowView.findViewById(R.id.product_picture);
 
 
         //4. set the text
 
-        parkname_view.setText("Park Name: "+ itemsArrayList.get(position).getparkname());
-        description_view.setText("Park Manager: "+ itemsArrayList.get(position).getpsamanager() +",  "+
-                                 "Park phone: "+ itemsArrayList.get(position).getnumber()
-        +", Park email: "+ itemsArrayList.get(position).getemail());
-
-
-
-        // 5. retrn rowView
-        Integer memindex = Integer.parseInt(itemsArrayList.get(position).getparkid());
-        rowView.setId(memindex);
-
-
-
-
-        parkname = itemsArrayList.get(position).getparkname();
-        zipcode = itemsArrayList.get(position).getzipcode();
-        human_address = itemsArrayList.get(position).gethuman_address();
-        psamanager= itemsArrayList.get(position).getpsamanager();
-        email = itemsArrayList.get(position).getemail();
-        number = itemsArrayList.get(position).getnumber();
+        parkname_view.setText(" " + itemsArrayList.get(position).getName());
 
         rowView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
 
-
                 Intent i = new Intent(context,
                         MessageInside.class);
 
-                i.putExtra("otherguyname", parkname);
-
-                i.putExtra("prevActivity", "MainActivity");
-
-                i.putExtra("zipcode", zipcode);
-                i.putExtra("human_address", human_address);
-                i.putExtra("psamanager", psamanager);
-                i.putExtra("email", email);
-                i.putExtra("number", number);
 
                 context.startActivity(i);
 
             }
         });
+
+        switch (position){
+
+            case 0:
+
+                product_picture.setImageResource(R.drawable.cafe);
+
+                break;
+
+            case 1:
+
+                product_picture.setImageResource(R.drawable.cafe);
+                break;
+
+            case 2:
+                product_picture.setImageResource(R.drawable.cafe);
+                break;
+
+            case 3:
+                product_picture.setImageResource(R.drawable.cafe);
+                break;
+
+            default:
+                product_picture.setImageResource(R.drawable.cafe);
+                break;
+
+        }
 
 
 
